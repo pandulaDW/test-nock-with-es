@@ -1,7 +1,7 @@
 const express = require("express");
 const { Client } = require("@elastic/elasticsearch");
 const { default: axios } = require("axios");
-const nock = require("nock");
+// const nock = require("nock"); // uncomment for nock to work
 
 const app = express();
 const client = new Client({ node: "http://localhost:9200" });
